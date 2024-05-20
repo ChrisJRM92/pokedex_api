@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './assets/pages/HomePage'
 import PokedexPage from './assets/pages/PokedexPage'
 import PokeInfoDex from './assets/pages/PokeInfoDex'
 import ProtecteRoutes from './assets/pages/ProtecteRoutes'
+import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

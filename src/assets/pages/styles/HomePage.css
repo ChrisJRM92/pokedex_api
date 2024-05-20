@@ -1,0 +1,213 @@
+.container{
+  background: linear-gradient(135deg, #ff3332, #ff904d);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  .container_waves{
+    grid-area: 1 / 1 / 2 / 2;
+    /* background-color: blue; */
+    background-image: url(/public/wave.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+    
+  }
+
+  .container_front_content{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Contenedor del logo principal */
+.container_grid_icon{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 80px;
+
+  .header_icon{
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url(/public/pokeball_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    /* background-color: blueviolet; */
+  }
+
+  .header_title{
+    grid-area: 1 / 2 / 2 / 3;
+    /* background-color: blue; */
+    .title{
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  .header_description{
+    grid-area: 2 / 2 / 3 / 3;
+
+    .description{
+      font-size: 12px;
+      margin-left: 10px;
+      font-weight: 300;
+    }
+  }
+}
+
+/* Contenedor del contenido principal */
+.container_content{
+  /* background-color: aqua; */
+  width: 350px;
+  margin-left: 25px;
+
+  .pikachu_icon{
+    background-image: url(/public/pikachu.png);
+    /* background-color: #ff3332; */
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .welcome_title{
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+
+  .paragraph_1{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .paragraph_2{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .container_form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    input{
+      border-style: none;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      outline: none;
+      width: 200px;
+    }
+
+    button{
+      border-style: none;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: dimgrey;
+      background-color: gold;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .paragraph_3{
+    width: 250px;
+    margin-top: 10px;
+    font-size: 8px;
+  }
+
+  .paragraph_4{
+    margin-top: 10px;
+    font-size: 8px;
+
+    a{
+      color: gold;
+    }
+  }
+
+  .paragraph_5{
+    margin-top: 5px;
+    font-size: 8px;
+
+    a{
+      color: gold;
+    }
+  }
+
+  .container_author{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    img{
+      width: 25px;
+      height: 25px;
+    }
+
+    i{
+      color: aliceblue;
+      font-size: 24px;
+      margin-left: 5px;
+    }
+  }
+}
+
+/* Contenedor de pikachu */
+.container_pikachu{
+  /* background-color: blueviolet; */
+  background-image: url('/public/pikachu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+}
+
+p{
+  color: aliceblue;
+}
+
+h1, h2 {
+  color: aliceblue;
+}
+
+@media screen and (max-width:768px) {
+  .container_pikachu{
+    display: none;
+  }
+
+  .container_content{
+    .pikachu_icon{
+      
+    }
+  }
+}
+
+@media screen and (min-width:769px) {
+  .container_pikachu{
+    
+  }
+
+  .container_content{
+    .pikachu_icon{
+      display: none;
+    }
+  }
+}
+
