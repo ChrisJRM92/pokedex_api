@@ -18,10 +18,13 @@ const PokeInfoDex = () => {
   // console.log(pokemon)
 
   return (
-    <article>
+    <div className="container_info_pokemon">
+      <div className="header_info_page"></div>
+      <div className="body_info_page"></div>
+      <div className="footer_info_page"></div>
       <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
       <h2>{pokemon?.name}</h2>
-    </article>
+    </div>
   )
 }
 

@@ -3,9 +3,8 @@ import useFetch from "../hooks/useFetch"
 import { useEffect, useRef, useState } from "react"
 import PokeCard from '../components/PokedexPage/PokeCard'
 import SelectType from "../components/PokedexPage/SelectType"
-import Logo from "../components/PokedexPage/Logo"
 import './styles/PokedexPage.css'
-import { useNavigate } from "react-router-dom"
+import Menu from "../components/PokedexPage/Menu"
 
 
 const PokedexPage = () => {
@@ -48,27 +47,11 @@ const PokedexPage = () => {
     return filterName
   }
 
-  const navigate = useNavigate()
-
-  const handleExit = (e) => {
-    e.preventDefault()
-    navigate('/')
-  }
-
   return (
     <div className="container__home">
       {/* ----------Cabecera principal----------- */}
-      <header className="header">
-        <div className="header__wave"></div>
-
-        <div className="header__contain">
-          <div className="contain__icon">
-            <Logo/>
-          </div>
-          <div className="header__button">
-            <button onClick={handleExit}>Salir</button>
-          </div>
-        </div>
+      <header>
+        <Menu/>
       </header>
 
       {/* ----------Contenido de la pagina---------- */}
