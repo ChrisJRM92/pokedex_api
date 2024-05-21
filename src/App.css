@@ -17,3 +17,21 @@ p{
 h1, h2, h3{
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5500;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

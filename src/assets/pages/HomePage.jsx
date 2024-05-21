@@ -3,6 +3,7 @@ import { setTrainer } from "../../store/slices/trainerSlice"
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import './styles/HomePage.css'
+import Logo from "../components/PokedexPage/Logo"
 
 
 const HomePage = () => {
@@ -29,15 +30,7 @@ const HomePage = () => {
       
       <div className="container_front_content">
         <div className="container_content">
-          <div className="container_grid_icon">
-            <div className="header_icon"></div>
-            <div className="header_title">
-              <h1 className="title">Pokédex virtual</h1>
-            </div>
-            <div className="header_description">
-              <h2 className="description">Estadisticas en un solo lugar</h2>
-            </div>
-          </div>
+          <Logo/>
           <div className="pikachu_icon"></div>
           <h1 className="welcome_title">Hola entrenador! te damos la bienvenida a Pokédex Virtual</h1>
           <p className="paragraph_1">Aquí encontrarás estadisticas completas de todos tus pokémons favoritos.</p>

@@ -1,0 +1,16 @@
+.select__type{
+  border-radius: 30px;
+  color: dimgray;
+  padding-left: 5px;
+  width: 150px;
+  padding: 3px;
+
+  .type__options{
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .select__type{
+    margin-top: 10px;
+  }
+}
