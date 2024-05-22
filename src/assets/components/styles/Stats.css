@@ -1,0 +1,45 @@
+.stat_hp{
+
+}
+
+.titles{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.styles{
+  font-size: 12px;
+  font-weight: 400;
+  color: dimgray;
+}
+
+.progress_bar{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  .PBack{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: darkgrey;
+    width: 100%;
+  }
+
+  .PFront{
+    grid-area: 1 / 1 / 2 / 2;
+    background: linear-gradient(135deg, #f9ce6b, #ff3624);
+    width: 100px;
+    margin-left: 0;
+    transition: width 0.5s ease-in-out;
+  }
+}
+
+.pogresbar{
+  height: 10px;
+  border-style: none;
+  /* background-color: darkgrey; */
+  /* background: linear-gradient(135deg, #f9ce6b, #ff3624); */
+  border-radius: 30px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}

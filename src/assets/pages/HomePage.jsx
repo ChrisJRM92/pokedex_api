@@ -46,7 +46,7 @@ const HomePage = () => {
           <p className="paragraph_5">*Diseño inspirado en: <a href="https://dribbble.com/shots/2864555-Landing-Page-for-Pokemon-Go-App" target="_blank">Max Iver</a></p>
           <div className="container_author">
             <a href="https://christianromero.netlify.app/#home" target="_blank"><img src="/public/profile.png" alt="Christian R" /></a>
-            <a href="https://github.com/ChrisJRM92/pokedex_api" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/ChrisJRM92/pokedex_api" target="_blank"><i className="fa-brands fa-github"></i></a>
           </div>
         </div>
         <div className="container_pikachu"></div>

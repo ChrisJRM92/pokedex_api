@@ -153,7 +153,7 @@
 }
 
 
-/*aquí decidí imlementar las 3 cosas juntas para mayor velocidad*/
+/* Estilos de fondo para las tarjetas */
 .bg_steel {
   background: linear-gradient(179.75deg, #750c95 -19.96%, #972b9b 43.67%, #d070d9 138.4%);
 
@@ -205,7 +205,7 @@
 }
 
 
-/* Color al borde de la card */
+/* Color de borde de las tarjetas*/
 .border_grass {
   border-color: #CAE099;
 }
@@ -241,7 +241,7 @@
 }
 
 
-/* color al texto de la card*/
+/* Texto de la tarjeta*/
 .text_grass {
   color:#416460 ;
 }
@@ -255,7 +255,7 @@
   color: #654008;
 }
 .text_normal {
- color: #7C3F4C; 
+  color: #7C3F4C; 
 }
 .text_fighting {
   color: #3cbe09;

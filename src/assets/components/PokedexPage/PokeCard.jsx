@@ -18,7 +18,7 @@ const PokeCard = ({poke}) => {
     navigate(`/pokemon/${pokemon.name}`)
   }
 
-  // console.log(pokemon)
+  console.log(pokemon)
 
   return (
     <article className={`poke border_${pokemon?.types[0].type.name}`} onClick={handleDetail}>

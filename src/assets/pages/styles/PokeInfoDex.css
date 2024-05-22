@@ -1,0 +1,274 @@
+
+/* ---------Contenedor principal de retorno---------- */
+.container_info_pokemon{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: gold; */
+}
+
+/* --------Cabecera-------- */
+.header_info_page{
+  /* background-color: blueviolet; */
+}
+
+
+/* ---------Cuerpo--------- */
+.body_info_page{
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container_stats{
+    /* background-color: #ff5500; */
+    width: auto;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 330px, 330px; */
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+
+    .card_stats1{
+      grid-area: 1 / 1 / 3 / 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #9bd3c5;
+      border-radius: 30px;
+
+      .card_stats_color_back{
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #9bd3c5;
+        width: 100%;
+        height: 100%;
+        border-radius: 27px;
+      }
+
+      .card_stats_color_front{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        .color_front{
+          width: 100%;
+          height: 270px;
+          background-color: #f2f2f2;
+          border-radius: 30px;
+        }
+      }
+
+      .card_stats_content{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo_pokemon_card{
+          width: 100%;
+          height: 25px;
+          margin: 10px 0 0 20px;
+          background-image: url(/public/pokemon.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        .pokemon_frame{
+          width: 170px;
+          height: 170px;
+        }
+
+        .pokemon_name{
+          color: gray;
+          font-weight: 500;
+        }
+
+        .rule_line{
+          width: 200px;
+        }
+
+        .phisical_stats{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          .stats_height{
+            margin-right: 20px;
+
+            .title_stat{
+              color: #2C3E50;
+              font-size: 13px;
+              text-align: center;
+              font-weight: 600;
+            }
+
+            .value_stat{
+              color: darkgray;
+              font-size: 12px;
+              text-align: center;
+            }
+          }
+
+          .stats_weight{
+            .title_stat{
+              color: #2C3E50;
+              font-size: 13px;
+              text-align: center;
+              font-weight: 600;
+            }
+
+            .value_stat{
+              color: darkgray;
+              font-size: 12px;
+              text-align: center;
+            }
+          }
+        }
+
+        .stats_types{
+          display: flex;
+          background-color: #9bd3c5;
+          align-self: flex-start;
+
+          .pokemon_type{
+            color: dimgray;
+          }
+        }
+
+        .stats_abilities{
+          display: flex;
+          align-self: flex-start;
+          background-color: #9bd3c5;
+
+          .pokemon_abilities{
+            color: dimgray;
+          }
+        }
+      }
+    }
+
+    .card_stats2{
+      grid-area: 1 / 2 / 2 / 3;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 30px;
+      border-color: #9bd3c5;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      /* background-color: #ff5500; */
+
+      .header_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* background-color: #FFC300; */
+
+        .title_stats{
+          grid-area: 1 / 1 / 2 / 2;
+          color: #2C3E50;
+          font-size: 15px;
+          font-weight: 600;
+          margin: 10px 0 0 15px;
+          background-color: #f2f2f2;
+          width: fit-content;
+          z-index: 1;
+        }
+  
+        .hr_stats{
+          grid-area: 1 / 1 / 2 / 2;
+          width: 300px;
+          height: 2px;
+          border-style: none;
+          background-color: darkgray;
+          border-radius: 30px;
+          margin-top: 21px;
+        }
+      }
+    }
+
+    .card_stats3{
+      grid-area: 2 / 2 / 3 / 3;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #9bd3c5;
+      border-radius: 30px;
+    }
+
+  }
+}
+
+/* ----------------------------------- */
+.modifier_stats{
+  
+}
+
+/* ----------------------------------- */
+
+
+
+
+
+
+
+
+/* --------Pie de pagina-------- */
+.footer_info_page{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .footer_navigate{
+    background-color: #ff5500;
+    height: 50px;
+    width: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .button_back{
+      width: 80px;
+      height: 35px;
+      border-radius: 50px;
+      color: #ff5500;
+      background-color: #f2f2f2;
+      border-width: 1px;
+      border-color: #f2f2f2;
+      border-style: solid;
+
+      &:hover{
+        background-color: transparent;
+        color: #f2f2f2;
+        border-width: 1px;
+        border-color: #f2f2f2;
+        cursor: pointer;
+      }
+
+      &:active{
+        background-color: #FFC300;
+        border-color: #FFC300;
+        color: dimgray;
+      }
+
+
+    }
+  }
+
+}
