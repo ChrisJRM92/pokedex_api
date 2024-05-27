@@ -506,7 +506,7 @@ const PokeInfoDex = () => {
           <div className="card_stats2">
             <div className="header_stats_values">
               <div className="header_grid">
-                <p className="title_stats"><i class="fa-solid fa-chart-bar"></i>&nbsp;Estadisticas&nbsp;</p>
+                <p className="title_stats"><i class="fa-solid fa-chart-bar"></i>&nbsp;Estadísticas&nbsp;</p>
                 <hr className="hr_stats" />
               </div>
             </div>
@@ -519,7 +519,7 @@ const PokeInfoDex = () => {
           <div className="card_stats3">
             <div className="header_move_values">
               <div className="header_grid_move">
-                <p className="title_move"><i class="fa-solid fa-bookmark"></i>&nbsp;Estadisticas&nbsp;</p>
+                <p className="title_move"><i class="fa-solid fa-bookmark"></i>&nbsp;Estadísticas&nbsp;</p>
                 <hr className="hr_move" />
               </div>
             </div>

@@ -33,7 +33,7 @@ const HomePage = () => {
           <Logo/>
           <div className="pikachu_icon"></div>
           <h1 className="welcome_title">Hola entrenador! te damos la bienvenida a Pokédex Virtual</h1>
-          <p className="paragraph_1">Aquí encontrarás estadisticas completas de todos tus pokémons favoritos.</p>
+          <p className="paragraph_1">Aquí encontrarás estadísticas completas de todos tus pokémons favoritos.</p>
           <p className="paragraph_2">Ingresa tu nombre para iniciar la búsqueda</p>
           <div className="container_form">
             <form onSubmit={handleSubmit} action="">
@@ -45,7 +45,7 @@ const HomePage = () => {
           <p className="paragraph_4">*Datos obtenidos de <a href="https://pokeapi.co/" target="_blank">PokeApi</a></p>
           <p className="paragraph_5">*Diseño inspirado en: <a href="https://dribbble.com/shots/2864555-Landing-Page-for-Pokemon-Go-App" target="_blank">Max Iver</a></p>
           <div className="container_author">
-            <a href="https://christianromero.netlify.app/#home" target="_blank"><img src="/public/profile.png" alt="Christian R" /></a>
+            <a href="https://christianromero.netlify.app/#home" target="_blank"><img src="/profile.png" alt="Christian R" /></a>
             <a href="https://github.com/ChrisJRM92/pokedex_api" target="_blank"><i className="fa-brands fa-github"></i></a>
           </div>
         </div>

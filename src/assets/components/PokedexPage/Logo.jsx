@@ -9,7 +9,7 @@ const Logo = () => {
         <h1 className="title">Pokédex virtual</h1>
       </div>
       <div className="header_description">
-        <h2 className="description">Estadisticas en un solo lugar</h2>
+        <h2 className="description">Estadísticas en un solo lugar</h2>
       </div>
     </div>
   )
