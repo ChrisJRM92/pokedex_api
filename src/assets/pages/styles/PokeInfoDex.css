@@ -24,7 +24,7 @@
   .container_stats{
     /* background-color: #ff5500; */
     width: auto;
-    height: 400px;
+    /* height: 400px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-columns: 330px, 330px; */
@@ -41,6 +41,7 @@
       border-width: 2px;
       border-color: #9bd3c5;
       border-radius: 30px;
+      height: 400px;
 
       .card_stats_color_back{
         grid-area: 1 / 1 / 2 / 2;
@@ -134,23 +135,30 @@
           }
         }
 
-        .stats_types{
+        .container_stats_details{
           display: flex;
-          background-color: #9bd3c5;
-          align-self: flex-start;
+          gap: 10px;
+          margin-top: 10px;
 
-          .pokemon_type{
-            color: dimgray;
+          .type_pokemon{
+            /* background-color: #ff5500; */
+
+            .type_type{
+              display: flex;
+              gap: 5px;
+              width: 180px;
+              overflow: auto;
+              flex-wrap: wrap;
+            }
           }
-        }
 
-        .stats_abilities{
-          display: flex;
-          align-self: flex-start;
-          background-color: #9bd3c5;
+          .ability_pokemon{
+            /* background-color: chartreuse; */
 
-          .pokemon_abilities{
-            color: dimgray;
+            .ability_ability{
+              display: flex;
+              gap: 5px;
+            }
           }
         }
       }
@@ -164,7 +172,7 @@
       border-color: #9bd3c5;
       display: flex;
       flex-direction: column;
-      padding: 20px;
+      padding: 5px 20px 20px 20px;
       /* background-color: #ff5500; */
 
       .header_grid{
@@ -178,10 +186,15 @@
           color: #2C3E50;
           font-size: 15px;
           font-weight: 600;
-          margin: 10px 0 0 15px;
+          margin: 10px 0 0 0;
           background-color: #f2f2f2;
           width: fit-content;
           z-index: 1;
+          /* border-left: solid #f2f2f2 15px; */
+        }
+
+        .fa-chart-bar{
+          color: darkgray;
         }
   
         .hr_stats{
@@ -202,14 +215,92 @@
       border-width: 2px;
       border-color: #9bd3c5;
       border-radius: 30px;
-    }
+      padding: 5px 20px 5px 20px;
+      height: 119px;
+      /* height: 150px; */
 
+      .header_grid_move{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* background-color: #FFC300; */
+
+        .title_move{
+          grid-area: 1 / 1 / 2 / 2;
+          color: #2C3E50;
+          font-size: 15px;
+          font-weight: 600;
+          margin: 10px 0 0 0;
+          background-color: #f2f2f2;
+          width: fit-content;
+          z-index: 1;
+          /* border-left: solid #f2f2f2 15px; */
+        }
+
+        .fa-bookmark{
+          color: darkgray;
+        }
+  
+        .hr_move{
+          grid-area: 1 / 1 / 2 / 2;
+          width: 300px;
+          height: 2px;
+          border-style: none;
+          background-color: darkgray;
+          border-radius: 30px;
+          margin-top: 21px;
+        }
+      }
+
+      .move_details{
+        overflow: auto;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        /* background-color: #FFC300; */
+        margin-top: 10px;
+      
+        .info_move_list{
+          font-size: 10px;
+          padding: 5px;
+          background-color: white;
+          border-radius: 30px;
+          color: dimgray;
+        }
+      }
+    }
   }
 }
 
 /* ----------------------------------- */
-.modifier_stats{
+.label_pokemon{
   
+  p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2C3E50;
+    text-align: center;
+  }
+}
+
+.label_styles1{
+  margin-top: 5px;
+  font-size: 10px;
+  background-color: white;
+  color: dimgray;
+  padding: 0 8px 0 8px;
+  border-radius: 5px;
+}
+
+.label_styles2{
+  margin-top: 5px;
+  font-size: 10px;
+  background-color: white;
+  color: dimgray;
+  padding: 0 8px 0 8px;
+  border-radius: 5px;
 }
 
 /* ----------------------------------- */
@@ -232,6 +323,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  z-index: 99;
 
   .footer_navigate{
     background-color: #ff5500;
@@ -266,9 +358,32 @@
         border-color: #FFC300;
         color: dimgray;
       }
-
-
     }
   }
+}
 
+@media screen and (max-width: 768px) {
+  .body_info_page{
+    .container_stats{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px, 200px, 400px 150px;
+      .card_stats1{
+        grid-area: 1 / 1 / 3 / 2;
+      }
+
+      .card_stats2{
+        grid-area: 3 / 1 / 4 / 2;
+      }
+
+      .card_stats3{
+        grid-area: 4 / 1 / 5 / 2;
+        margin-bottom: 70px;
+        height: 300px;
+        .move_details{
+          height: 220px;
+        }
+      }
+    }
+  }
 }

@@ -56,6 +56,15 @@
         color: dimgrey;
         background-color: gold;
         margin-right: 30px;
+
+        &:hover{
+          cursor: pointer;
+        }
+
+        &:active{
+          background-color: #ff5500;
+          color: #f2f2f2f2;
+        }
       }
     }
   }
