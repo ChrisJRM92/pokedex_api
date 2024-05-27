@@ -519,7 +519,7 @@ const PokeInfoDex = () => {
           <div className="card_stats3">
             <div className="header_move_values">
               <div className="header_grid_move">
-                <p className="title_move"><i class="fa-solid fa-bookmark"></i>&nbsp;Estadísticas&nbsp;</p>
+                <p className="title_move"><i class="fa-solid fa-bookmark"></i>&nbsp;Movimientos&nbsp;</p>
                 <hr className="hr_move" />
               </div>
             </div>
